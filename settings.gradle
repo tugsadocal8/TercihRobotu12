@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='Tercih Robotu 1.0'

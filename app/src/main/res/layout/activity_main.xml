@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtbombos"
+        android:layout_centerInParent="true"
+        android:textSize="8sp"
+        android:text="  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtPuan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:text=" Bölüm"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <Spinner
+        android:id="@+id/spinnerBolumler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/txtPuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        android:text=" Üniversite"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    <Spinner
+        android:id="@+id/spinnerUniversiteler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/txtboss"
+        android:layout_centerInParent="true"
+        android:textSize="4sp" android:text="  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtUniTur2"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text=" Bölüm Türü"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Önlisans(2 Yıllık)"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="162dp"
+        android:layout_height="33dp"
+        android:text="Lisans(4+ Yıllık)"
+        tools:layout_editor_absoluteX="236dp"
+        tools:layout_editor_absoluteY="316dp" />
+    <TextView
+        android:id="@+id/txtbos"
+        android:layout_centerInParent="true"
+        android:textSize="4sp"
+        android:text="  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtBolumTur"
+        android:layout_centerInParent="true"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text=" Puan Türü"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radioPuanTur"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioHepsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hepsi"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioSayisal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayısal" />
+        <RadioButton
+            android:id="@+id/radioEsit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eşit Ağırlık" />
+
+        <RadioButton
+            android:id="@+id/radioSozel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sözel" />
+        <RadioButton
+            android:id="@+id/radioDil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dil" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtUniTur"
+        android:layout_centerInParent="true"
+        android:textSize="4sp"
+        android:text="  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/sonucFiltreButton"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
+        android:text="Sonuçları Filtrele"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+
+    <Button
+        android:id="@+id/bolumsButton"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
+        android:onClick="Tiklandi"
+        android:text="Bölümler"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</TableLayout>
